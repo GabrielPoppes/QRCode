@@ -1,5 +1,5 @@
 ﻿
-namespace QRCode
+namespace QRCodeApplication
 {
     partial class Loading
     {

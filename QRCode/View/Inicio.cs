@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QRCode.View
+namespace QRCodeApplication.View
 {
     public partial class Inicio : Form
     {
@@ -46,9 +46,30 @@ namespace QRCode.View
         }
         #endregion
 
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
         private void btnQRCode_Click(object sender, EventArgs e) // Evento clique no botão btnQRCode
         {
             ShowSubMenu(panelQRCode);
+        }
+
+        private void btnSMS_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormSMS());
+            HideSubMenu();
         }
     }
 }

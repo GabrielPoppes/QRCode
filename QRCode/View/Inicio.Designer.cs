@@ -1,5 +1,5 @@
 ﻿
-namespace QRCode.View
+namespace QRCodeApplication.View
 {
     partial class Inicio
     {
@@ -38,6 +38,8 @@ namespace QRCode.View
             this.btnWiFi = new System.Windows.Forms.Button();
             this.btnTelefone = new System.Windows.Forms.Button();
             this.btnSite = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelChildForm = new System.Windows.Forms.Panel();
             this.panelMenuMain.SuspendLayout();
             this.panelQRCode.SuspendLayout();
             this.SuspendLayout();
@@ -95,6 +97,7 @@ namespace QRCode.View
             // 
             // btnSMS
             // 
+            this.btnSMS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(100)))));
             this.btnSMS.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSMS.FlatAppearance.BorderSize = 0;
             this.btnSMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -106,7 +109,8 @@ namespace QRCode.View
             this.btnSMS.TabIndex = 0;
             this.btnSMS.Text = "Mensagem de texto (SMS)";
             this.btnSMS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSMS.UseVisualStyleBackColor = true;
+            this.btnSMS.UseVisualStyleBackColor = false;
+            this.btnSMS.Click += new System.EventHandler(this.btnSMS_Click);
             // 
             // btnWhatsApp
             // 
@@ -168,11 +172,31 @@ namespace QRCode.View
             this.btnSite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSite.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(200, 507);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(905, 100);
+            this.panel1.TabIndex = 1;
+            // 
+            // panelChildForm
+            // 
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(65)))), ((int)(((byte)(98)))));
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(200, 0);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(905, 507);
+            this.panelChildForm.TabIndex = 2;
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1105, 607);
+            this.Controls.Add(this.panelChildForm);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenuMain);
             this.MinimumSize = new System.Drawing.Size(1121, 646);
             this.Name = "Inicio";
@@ -195,5 +219,7 @@ namespace QRCode.View
         private System.Windows.Forms.Button btnSMS;
         private System.Windows.Forms.Button btnQRCode;
         private System.Windows.Forms.Panel panelMenuTop;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelChildForm;
     }
 }
