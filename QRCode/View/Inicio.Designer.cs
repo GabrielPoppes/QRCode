@@ -45,7 +45,7 @@ namespace QRCode.View
             // panelMenuMain
             // 
             this.panelMenuMain.AutoScroll = true;
-            this.panelMenuMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.panelMenuMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(64)))), ((int)(((byte)(96)))));
             this.panelMenuMain.Controls.Add(this.panelQRCode);
             this.panelMenuMain.Controls.Add(this.btnQRCode);
             this.panelMenuMain.Controls.Add(this.panelMenuTop);
@@ -57,7 +57,7 @@ namespace QRCode.View
             // 
             // panelMenuTop
             // 
-            this.panelMenuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.panelMenuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(39)))));
             this.panelMenuTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMenuTop.Location = new System.Drawing.Point(0, 0);
             this.panelMenuTop.Name = "panelMenuTop";
