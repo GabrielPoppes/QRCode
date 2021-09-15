@@ -35,7 +35,9 @@ namespace QRCodeApplication.View
             this.txtbNomeRede = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtbSenhaRede = new System.Windows.Forms.TextBox();
+            this.pictureFundoBranco = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picQRCodeApplicationApplication)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureFundoBranco)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -97,12 +99,22 @@ namespace QRCodeApplication.View
             this.txtbSenhaRede.TabIndex = 11;
             this.txtbSenhaRede.TextChanged += new System.EventHandler(this.txtbSenhaRede_TextChanged);
             // 
+            // pictureFundoBranco
+            // 
+            this.pictureFundoBranco.Image = global::QRCode.Properties.Resources.fundobranco;
+            this.pictureFundoBranco.Location = new System.Drawing.Point(539, 77);
+            this.pictureFundoBranco.Name = "pictureFundoBranco";
+            this.pictureFundoBranco.Size = new System.Drawing.Size(275, 275);
+            this.pictureFundoBranco.TabIndex = 12;
+            this.pictureFundoBranco.TabStop = false;
+            // 
             // FormWifi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(65)))), ((int)(((byte)(98)))));
             this.ClientSize = new System.Drawing.Size(889, 468);
+            this.Controls.Add(this.pictureFundoBranco);
             this.Controls.Add(this.txtbSenhaRede);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtbNomeRede);
@@ -112,6 +124,7 @@ namespace QRCodeApplication.View
             this.Name = "FormWifi";
             this.Text = "FormWifi";
             ((System.ComponentModel.ISupportInitialize)(this.picQRCodeApplicationApplication)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureFundoBranco)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,5 +138,6 @@ namespace QRCodeApplication.View
         private System.Windows.Forms.TextBox txtbNomeRede;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtbSenhaRede;
+        private System.Windows.Forms.PictureBox pictureFundoBranco;
     }
 }

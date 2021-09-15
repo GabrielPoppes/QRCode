@@ -33,7 +33,9 @@ namespace QRCodeApplicationApplicationApplication.View
             this.btnQRCodeApplicationApplication = new System.Windows.Forms.Button();
             this.txbTelefone = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureFundoBranco = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picQRCodeApplicationApplication)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureFundoBranco)).BeginInit();
             this.SuspendLayout();
             // 
             // picQRCodeApplicationApplication
@@ -76,12 +78,22 @@ namespace QRCodeApplicationApplicationApplication.View
             this.label1.TabIndex = 4;
             this.label1.Text = "Celular";
             // 
+            // pictureFundoBranco
+            // 
+            this.pictureFundoBranco.Image = global::QRCode.Properties.Resources.fundobranco;
+            this.pictureFundoBranco.Location = new System.Drawing.Point(256, 48);
+            this.pictureFundoBranco.Name = "pictureFundoBranco";
+            this.pictureFundoBranco.Size = new System.Drawing.Size(275, 275);
+            this.pictureFundoBranco.TabIndex = 5;
+            this.pictureFundoBranco.TabStop = false;
+            // 
             // FormSMS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(65)))), ((int)(((byte)(98)))));
             this.ClientSize = new System.Drawing.Size(889, 468);
+            this.Controls.Add(this.pictureFundoBranco);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txbTelefone);
             this.Controls.Add(this.btnQRCodeApplicationApplication);
@@ -89,6 +101,7 @@ namespace QRCodeApplicationApplicationApplication.View
             this.Name = "FormSMS";
             this.Text = "FormSMS";
             ((System.ComponentModel.ISupportInitialize)(this.picQRCodeApplicationApplication)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureFundoBranco)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,5 +113,6 @@ namespace QRCodeApplicationApplicationApplication.View
         private System.Windows.Forms.Button btnQRCodeApplicationApplication;
         private System.Windows.Forms.MaskedTextBox txbTelefone;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureFundoBranco;
     }
 }

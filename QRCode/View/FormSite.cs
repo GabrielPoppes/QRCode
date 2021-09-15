@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static QRCoder.PayloadGenerator;
+using QRCodeApplication;
 
 namespace QRCodeApplication.View
 {
@@ -22,6 +23,7 @@ namespace QRCodeApplication.View
         #region Ação do botão Gerar QR Code
         private void btnQRCodeApplicationApplication_Click(object sender, EventArgs e) // Botão Gerar QR Code
         {
+            pictureFundoBranco.Hide();
             GerarQRCodeApplicationApplication();
         }
         #endregion
@@ -38,7 +40,7 @@ namespace QRCodeApplication.View
                 string payload = generator.ToString();
                 QRCodeGenerator qrGenerator = new QRCodeGenerator();
                 QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
-                QRCode qrCode = new QRCode(qrCodeData);
+                QRCoder.QRCode qrCode = new QRCoder.QRCode(qrCodeData);
                 picQRCodeApplicationApplication.Image = qrCode.GetGraphic(20);
                 MessageBox.Show("QR Code gerado com sucesso!");
             }
