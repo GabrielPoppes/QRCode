@@ -1,4 +1,4 @@
-﻿using QRCoder;
+﻿using QRCodeApplication;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,9 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static QRCoder.PayloadGenerator;
-using QRCodeApplication;
+using QRCodeApplicationApplication;
+using QRCoder;
 
-namespace QRCodeApplication.View
+namespace QRCodeApplicationApplication.View
 {
     public partial class FormTelefone : Form
     {
@@ -21,15 +22,15 @@ namespace QRCodeApplication.View
         }
 
         #region Ação do botão Gerar QR Code
-        private void btnQRCodeApplicationApplication_Click(object sender, EventArgs e)
+        private void btnQRCodeApplicationApplicationApplication_Click(object sender, EventArgs e)
         {
             pictureFundoBranco.Hide();
-            GerarQRCodeApplicationApplication();
+            GerarQRCodeApplicationApplicationApplication();
         }
         #endregion
 
         #region Método para gerar o QR Code
-        private void GerarQRCodeApplicationApplication()
+        private void GerarQRCodeApplicationApplicationApplication()
         {
             string telefone = txbTelefone.Text;
 
@@ -41,7 +42,7 @@ namespace QRCodeApplication.View
                 QRCodeGenerator qrGenerator = new QRCodeGenerator();
                 QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
                 QRCoder.QRCode qrCode = new QRCoder.QRCode(qrCodeData);
-                picQRCodeApplicationApplication.Image = qrCode.GetGraphic(20);
+                picQRCodeApplicationApplicationApplication.Image = qrCode.GetGraphic(20);
                 MessageBox.Show("QR Code gerado com sucesso!");
                 MessageBox.Show(telefone);
             }

@@ -1,4 +1,4 @@
-﻿using QRCodeApplicationApplicationApplication.View;
+﻿using QRCodeApplicationApplicationApplicationApplication.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QRCodeApplicationApplicationApplication
+namespace QRCodeApplicationApplicationApplicationApplication
 {
     public partial class Loading : Form
     {

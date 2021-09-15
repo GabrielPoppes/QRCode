@@ -113,9 +113,9 @@ namespace QRCode.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap QRCODE {
+        internal static System.Drawing.Bitmap QRCode {
             get {
-                object obj = ResourceManager.GetObject("QRCODE", resourceCulture);
+                object obj = ResourceManager.GetObject("QRCode", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace QRCode.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap QRCODE_LOAD {
+        internal static System.Drawing.Bitmap QRCode_LOAD {
             get {
-                object obj = ResourceManager.GetObject("QRCODE_LOAD", resourceCulture);
+                object obj = ResourceManager.GetObject("QRCode_LOAD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace QRCode.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap QRCODE_LOADING {
+        internal static System.Drawing.Bitmap QRCode_LOADING {
             get {
-                object obj = ResourceManager.GetObject("QRCODE_LOADING", resourceCulture);
+                object obj = ResourceManager.GetObject("QRCode_LOADING", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

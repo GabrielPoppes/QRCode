@@ -1,4 +1,5 @@
-﻿using QRCoder;
+﻿using QRCodeApplication;
+using QRCoder;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static QRCoder.PayloadGenerator;
 
-namespace QRCodeApplication.View
+namespace QRCodeApplicationApplication.View
 {
     public partial class FormWifi : Form
     {
@@ -27,22 +28,21 @@ namespace QRCodeApplication.View
         #endregion
 
         #region Ação do botão Gerar QR Code
-        private void btnQRCodeApplicationApplication_Click(object sender, EventArgs e)
+        private void btnQRCodeApplicationApplicationApplication_Click(object sender, EventArgs e)
         {
             pictureFundoBranco.Hide();
-            GerarQRCode();
+            GerarQRCodeApplication();
         }
         #endregion
 
         #region Método para gerar o QR Code
-        private void GerarQRCode()
+        private void GerarQRCodeApplication()
         {
             string nomeWifi = txtbNomeRede.Text;
             string senhaWifi = txtbSenhaRede.Text;
 
             if (nomeWifi != "" && senhaWifi != "")
             {
-
                 WiFi generator = new PayloadGenerator.WiFi(nomeWifi, senhaWifi, PayloadGenerator.WiFi.Authentication.WPA);
 
                 string payload = generator.ToString();
@@ -50,7 +50,7 @@ namespace QRCodeApplication.View
                 QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
                 QRCoder.QRCode qrCode = new QRCoder.QRCode(qrCodeData);
 
-                picQRCodeApplicationApplication.Image = qrCode.GetGraphic(20);
+                picQRCodeApplicationApplicationApplication.Image = qrCode.GetGraphic(20);
                 MessageBox.Show("QR Code gerado com sucesso!");
             }
 

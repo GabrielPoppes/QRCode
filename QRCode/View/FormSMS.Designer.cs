@@ -1,5 +1,5 @@
 ﻿
-namespace QRCodeApplicationApplicationApplication.View
+namespace QRCodeApplicationApplicationApplicationApplication.View
 {
     partial class FormSMS
     {
@@ -29,34 +29,34 @@ namespace QRCodeApplicationApplicationApplication.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.picQRCodeApplicationApplication = new System.Windows.Forms.PictureBox();
-            this.btnQRCodeApplicationApplication = new System.Windows.Forms.Button();
+            this.picQRCodeApplicationApplicationApplication = new System.Windows.Forms.PictureBox();
+            this.btnQRCodeApplicationApplicationApplication = new System.Windows.Forms.Button();
             this.txbTelefone = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureFundoBranco = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picQRCodeApplicationApplication)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQRCodeApplicationApplicationApplication)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFundoBranco)).BeginInit();
             this.SuspendLayout();
             // 
-            // picQRCodeApplicationApplication
+            // picQRCodeApplicationApplicationApplication
             // 
-            this.picQRCodeApplicationApplication.Location = new System.Drawing.Point(256, 48);
-            this.picQRCodeApplicationApplication.Name = "picQRCodeApplicationApplication";
-            this.picQRCodeApplicationApplication.Size = new System.Drawing.Size(275, 275);
-            this.picQRCodeApplicationApplication.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picQRCodeApplicationApplication.TabIndex = 0;
-            this.picQRCodeApplicationApplication.TabStop = false;
+            this.picQRCodeApplicationApplicationApplication.Location = new System.Drawing.Point(256, 48);
+            this.picQRCodeApplicationApplicationApplication.Name = "picQRCodeApplicationApplicationApplication";
+            this.picQRCodeApplicationApplicationApplication.Size = new System.Drawing.Size(275, 275);
+            this.picQRCodeApplicationApplicationApplication.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picQRCodeApplicationApplicationApplication.TabIndex = 0;
+            this.picQRCodeApplicationApplicationApplication.TabStop = false;
             // 
-            // btnQRCodeApplicationApplication
+            // btnQRCodeApplicationApplicationApplication
             // 
-            this.btnQRCodeApplicationApplication.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQRCodeApplicationApplication.Location = new System.Drawing.Point(320, 378);
-            this.btnQRCodeApplicationApplication.Name = "btnQRCodeApplicationApplication";
-            this.btnQRCodeApplicationApplication.Size = new System.Drawing.Size(211, 43);
-            this.btnQRCodeApplicationApplication.TabIndex = 1;
-            this.btnQRCodeApplicationApplication.Text = "GERAR QR CODE";
-            this.btnQRCodeApplicationApplication.UseVisualStyleBackColor = true;
-            this.btnQRCodeApplicationApplication.Click += new System.EventHandler(this.btnQRCodeApplicationApplication_Click);
+            this.btnQRCodeApplicationApplicationApplication.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQRCodeApplicationApplicationApplication.Location = new System.Drawing.Point(320, 378);
+            this.btnQRCodeApplicationApplicationApplication.Name = "btnQRCodeApplicationApplicationApplication";
+            this.btnQRCodeApplicationApplicationApplication.Size = new System.Drawing.Size(211, 43);
+            this.btnQRCodeApplicationApplicationApplication.TabIndex = 1;
+            this.btnQRCodeApplicationApplicationApplication.Text = "GERAR QR CODE";
+            this.btnQRCodeApplicationApplicationApplication.UseVisualStyleBackColor = true;
+            this.btnQRCodeApplicationApplicationApplication.Click += new System.EventHandler(this.btnQRCodeApplicationApplicationApplication_Click);
             // 
             // txbTelefone
             // 
@@ -96,11 +96,11 @@ namespace QRCodeApplicationApplicationApplication.View
             this.Controls.Add(this.pictureFundoBranco);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txbTelefone);
-            this.Controls.Add(this.btnQRCodeApplicationApplication);
-            this.Controls.Add(this.picQRCodeApplicationApplication);
+            this.Controls.Add(this.btnQRCodeApplicationApplicationApplication);
+            this.Controls.Add(this.picQRCodeApplicationApplicationApplication);
             this.Name = "FormSMS";
             this.Text = "FormSMS";
-            ((System.ComponentModel.ISupportInitialize)(this.picQRCodeApplicationApplication)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQRCodeApplicationApplicationApplication)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFundoBranco)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -109,8 +109,8 @@ namespace QRCodeApplicationApplicationApplication.View
 
         #endregion
 
-        private System.Windows.Forms.PictureBox picQRCodeApplicationApplication;
-        private System.Windows.Forms.Button btnQRCodeApplicationApplication;
+        private System.Windows.Forms.PictureBox picQRCodeApplicationApplicationApplication;
+        private System.Windows.Forms.Button btnQRCodeApplicationApplicationApplication;
         private System.Windows.Forms.MaskedTextBox txbTelefone;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureFundoBranco;

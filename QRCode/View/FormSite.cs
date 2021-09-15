@@ -1,4 +1,4 @@
-﻿using QRCoder;
+﻿using QRCodeApplication;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,9 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static QRCoder.PayloadGenerator;
-using QRCodeApplication;
+using QRCodeApplicationApplication;
+using System.Security.Policy;
+using QRCoder;
 
-namespace QRCodeApplication.View
+namespace QRCodeApplicationApplication.View
 {
     public partial class FormSite : Form
     {
@@ -21,27 +23,27 @@ namespace QRCodeApplication.View
         }
 
         #region Ação do botão Gerar QR Code
-        private void btnQRCodeApplicationApplication_Click(object sender, EventArgs e) // Botão Gerar QR Code
+        private void btnQRCodeApplicationApplicationApplication_Click(object sender, EventArgs e) // Botão Gerar QR Code
         {
             pictureFundoBranco.Hide();
-            GerarQRCodeApplicationApplication();
+            GerarQRCodeApplicationApplicationApplication();
         }
         #endregion
 
         #region Método para gerar o QR Code
-        private void GerarQRCodeApplicationApplication()
+        private void GerarQRCodeApplicationApplicationApplication()
         {
             string site = txbSite.Text;
 
             if (site != "")
             {
-                Url generator = new Url(site);
+                System.Security.Policy.Url generator = new System.Security.Policy.Url(site);
 
                 string payload = generator.ToString();
                 QRCodeGenerator qrGenerator = new QRCodeGenerator();
                 QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
                 QRCoder.QRCode qrCode = new QRCoder.QRCode(qrCodeData);
-                picQRCodeApplicationApplication.Image = qrCode.GetGraphic(20);
+                picQRCodeApplicationApplicationApplication.Image = qrCode.GetGraphic(20);
                 MessageBox.Show("QR Code gerado com sucesso!");
             }
 

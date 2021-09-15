@@ -1,5 +1,5 @@
 ﻿
-namespace QRCodeApplicationApplicationApplication
+namespace QRCodeApplicationApplicationApplicationApplication
 {
     partial class Loading
     {
@@ -105,7 +105,7 @@ namespace QRCodeApplicationApplicationApplication
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::QRCode.Properties.Resources.QRCODE_LOAD;
+            this.pictureBox1.Image = global::QRCode.Properties.Resources.QRCode_LOAD;
             this.pictureBox1.Location = new System.Drawing.Point(108, 136);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(600, 156);

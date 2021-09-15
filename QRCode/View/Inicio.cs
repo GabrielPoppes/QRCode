@@ -1,6 +1,6 @@
-﻿using QRCodeApplication.View;
-using QRCodeApplicationApplication.View;
+﻿using QRCodeApplicationApplication.View;
 using QRCodeApplicationApplicationApplication.View;
+using QRCodeApplicationApplicationApplicationApplication.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QRCodeApplicationApplicationApplication.View
+namespace QRCodeApplicationApplicationApplicationApplication.View
 {
     public partial class Inicio : Form
     {
@@ -41,13 +41,13 @@ namespace QRCodeApplicationApplicationApplication.View
         #region EsconderSubMenu
         private void HideSubMenu() // Esconder Sub Menu
         {
-            if (panelQRCodeApplicationApplication.Visible == true)
-                panelQRCodeApplicationApplication.Visible = false;
+            if (panelQRCodeApplicationApplicationApplication.Visible == true)
+                panelQRCodeApplicationApplicationApplication.Visible = false;
         }
 
         private void CustomizeDesign() // Método para esconder os SUB Menus na inicialização do app
         {
-            panelQRCodeApplicationApplication.Visible = false;
+            panelQRCodeApplicationApplicationApplication.Visible = false;
         }
         #endregion
 
@@ -67,14 +67,14 @@ namespace QRCodeApplicationApplicationApplication.View
         #endregion
 
         #region Botão QR Code (MENU lateral)
-        private void btnQRCodeApplicationApplication_Click(object sender, EventArgs e) // Evento clique no botão btnQRCodeApplicationApplication
+        private void btnQRCodeApplicationApplicationApplication_Click_1(object sender, EventArgs e) // Evento clique no botão btnQRCodeApplicationApplicationApplication
         {
-            ShowSubMenu(panelQRCodeApplicationApplication);
+            ShowSubMenu(panelQRCodeApplicationApplicationApplication);
         }
         #endregion
 
         #region Botão SMS (MENU lateral)
-        private void btnSMS_Click(object sender, EventArgs e)
+        private void btnSMS_Click_1(object sender, EventArgs e)
         {
             openChildForm(new FormSMS());
             HideSubMenu();
@@ -82,7 +82,7 @@ namespace QRCodeApplicationApplicationApplication.View
         #endregion 
 
         #region Botão WhatsApp (MENU lateral)
-        private void btnWhatsApp_Click(object sender, EventArgs e)
+        private void btnWhatsApp_Click_1(object sender, EventArgs e)
         {
             openChildForm(new FormWhatsApp());
             HideSubMenu();
@@ -90,7 +90,7 @@ namespace QRCodeApplicationApplicationApplication.View
         #endregion
 
         #region Botão Wi fi (MENU lateral)
-        private void btnWiFi_Click(object sender, EventArgs e)
+        private void btnWifi_Click(object sender, EventArgs e)
         {
             openChildForm(new FormWifi());
             HideSubMenu();
@@ -98,7 +98,7 @@ namespace QRCodeApplicationApplicationApplication.View
         #endregion
 
         #region Botão Telefone (MENU lateral)
-        private void btnTelefone_Click(object sender, EventArgs e)
+        private void btnTelefone_Click_1(object sender, EventArgs e)
         {
             openChildForm(new FormTelefone());
             HideSubMenu();
@@ -106,9 +106,17 @@ namespace QRCodeApplicationApplicationApplication.View
         #endregion
 
         #region Botão Site (MENU lateral)
-        private void btnSite_Click(object sender, EventArgs e)
+        private void btnSite_Click_1(object sender, EventArgs e)
         {
             openChildForm(new FormSite());
+            HideSubMenu();
+        }
+        #endregion
+
+        #region Botão Inicio (MENU lateral)
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            openChildForm(new QRCodeApplication.View.FormAdvertising());
             HideSubMenu();
         }
         #endregion

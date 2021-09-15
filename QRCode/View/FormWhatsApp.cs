@@ -1,5 +1,5 @@
-﻿using QRCodeApplication;
-using QRCoder;
+﻿using QRCodeApplicationApplication;
+using QRCodeApplication;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,8 +10,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static QRCoder.PayloadGenerator;
+using QRCoder;
 
-namespace QRCodeApplicationApplication.View
+namespace QRCodeApplicationApplicationApplication.View
 {
     public partial class FormWhatsApp : Form
     {
@@ -21,15 +22,15 @@ namespace QRCodeApplicationApplication.View
         }
 
         #region Ação do botão Gerar QR Code
-        private void btnQRCodeApplicationApplication_Click(object sender, EventArgs e)
+        private void btnQRCodeApplicationApplicationApplication_Click(object sender, EventArgs e)
         {
             pictureFundoBranco.Hide();
-            GerarQRCodeApplicationApplication();
+            GerarQRCodeApplicationApplicationApplication();
         }
         #endregion
 
         #region Método para gerar o QR Code
-        private void GerarQRCodeApplicationApplication()
+        private void GerarQRCodeApplicationApplicationApplication()
         {
             string telefone = txbTelefone.Text;
             string texto = txtbTexto.Text;
@@ -41,7 +42,7 @@ namespace QRCodeApplicationApplication.View
                 QRCodeGenerator qrGenerator = new QRCodeGenerator();
                 QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
                 QRCoder.QRCode qrCode = new QRCoder.QRCode(qrCodeData);
-                picQRCodeApplicationApplication.Image = qrCode.GetGraphic(20);
+                picQRCodeApplicationApplicationApplication.Image = qrCode.GetGraphic(20);
                 MessageBox.Show("QR Code gerado com sucesso!");
             }
 
