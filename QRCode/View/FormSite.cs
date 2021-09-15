@@ -47,6 +47,7 @@ namespace QRCodeApplication.View
 
             else
             {
+                pictureFundoBranco.Show();
                 MessageBox.Show("Por favor, preencha todos os campos!");
             }
         }

@@ -33,7 +33,7 @@ namespace QRCodeApplication.View
         {
             string telefone = txbTelefone.Text;
 
-            if (telefone != "")
+            if (telefone != "" || telefone != "(  )     -    ")
             {
                 PhoneNumber generator = new PhoneNumber(telefone);
 
@@ -43,10 +43,12 @@ namespace QRCodeApplication.View
                 QRCoder.QRCode qrCode = new QRCoder.QRCode(qrCodeData);
                 picQRCodeApplicationApplication.Image = qrCode.GetGraphic(20);
                 MessageBox.Show("QR Code gerado com sucesso!");
+                MessageBox.Show(telefone);
             }
 
             else
             {
+                pictureFundoBranco.Show();
                 MessageBox.Show("Por favor, preencha todos os campos!");
             }
         }

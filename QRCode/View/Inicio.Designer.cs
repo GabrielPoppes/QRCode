@@ -37,10 +37,13 @@ namespace QRCodeApplicationApplicationApplication.View
             this.btnWhatsApp = new System.Windows.Forms.Button();
             this.btnSMS = new System.Windows.Forms.Button();
             this.btnQRCodeApplicationApplication = new System.Windows.Forms.Button();
-            this.panelMenuTop = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.panelMenuTop = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenuMain.SuspendLayout();
             this.panelQRCodeApplicationApplication.SuspendLayout();
+            this.panelMenuTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenuMain
@@ -172,15 +175,6 @@ namespace QRCodeApplicationApplicationApplication.View
             this.btnQRCodeApplicationApplication.UseVisualStyleBackColor = true;
             this.btnQRCodeApplicationApplication.Click += new System.EventHandler(this.btnQRCodeApplicationApplication_Click);
             // 
-            // panelMenuTop
-            // 
-            this.panelMenuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(39)))));
-            this.panelMenuTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMenuTop.Location = new System.Drawing.Point(0, 0);
-            this.panelMenuTop.Name = "panelMenuTop";
-            this.panelMenuTop.Size = new System.Drawing.Size(200, 171);
-            this.panelMenuTop.TabIndex = 0;
-            // 
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(65)))), ((int)(((byte)(98)))));
@@ -189,6 +183,26 @@ namespace QRCodeApplicationApplicationApplication.View
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(905, 607);
             this.panelChildForm.TabIndex = 2;
+            // 
+            // panelMenuTop
+            // 
+            this.panelMenuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(39)))));
+            this.panelMenuTop.Controls.Add(this.pictureBox1);
+            this.panelMenuTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMenuTop.Location = new System.Drawing.Point(0, 0);
+            this.panelMenuTop.Name = "panelMenuTop";
+            this.panelMenuTop.Size = new System.Drawing.Size(200, 171);
+            this.panelMenuTop.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QRCode.Properties.Resources.QR;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(173, 165);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Inicio
             // 
@@ -203,6 +217,8 @@ namespace QRCodeApplicationApplicationApplication.View
             this.Text = "Inicio";
             this.panelMenuMain.ResumeLayout(false);
             this.panelQRCodeApplicationApplication.ResumeLayout(false);
+            this.panelMenuTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -217,7 +233,8 @@ namespace QRCodeApplicationApplicationApplication.View
         private System.Windows.Forms.Button btnWhatsApp;
         private System.Windows.Forms.Button btnSMS;
         private System.Windows.Forms.Button btnQRCodeApplicationApplication;
-        private System.Windows.Forms.Panel panelMenuTop;
         private System.Windows.Forms.Panel panelChildForm;
+        private System.Windows.Forms.Panel panelMenuTop;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

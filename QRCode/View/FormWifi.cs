@@ -56,7 +56,8 @@ namespace QRCodeApplication.View
 
             else
             {
-                MessageBox.Show("Por favor, preencha todos os campos!");
+                pictureFundoBranco.Show();
+                MessageBox.Show("Por favor, preencha todos os campos!"); 
             }
         }
         #endregion

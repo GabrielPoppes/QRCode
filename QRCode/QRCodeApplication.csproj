@@ -143,5 +143,20 @@
   <ItemGroup>
     <None Include="Pictures\fundobranco.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QRCODE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Azul Escuro Tecnologia &amp; Jogos Logotipo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QRCODE_LOADING.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QRCODE_LOAD.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

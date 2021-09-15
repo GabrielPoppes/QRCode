@@ -36,11 +36,14 @@ namespace QRCodeApplicationApplicationApplication
             this.panelProgressBarLeft = new System.Windows.Forms.Panel();
             this.panelProgressBarRight = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelCenter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelCenter
             // 
+            this.panelCenter.Controls.Add(this.pictureBox1);
             this.panelCenter.Controls.Add(this.label2);
             this.panelCenter.Controls.Add(this.label1);
             this.panelCenter.Controls.Add(this.panelProgressBarLeft);
@@ -99,6 +102,16 @@ namespace QRCodeApplicationApplicationApplication
             this.timer1.Interval = 15;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::QRCode.Properties.Resources.QRCODE_LOAD;
+            this.pictureBox1.Location = new System.Drawing.Point(108, 136);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(600, 156);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Loading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -110,6 +123,7 @@ namespace QRCodeApplicationApplicationApplication
             this.Text = "Form1";
             this.panelCenter.ResumeLayout(false);
             this.panelCenter.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -122,6 +136,7 @@ namespace QRCodeApplicationApplicationApplication
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
