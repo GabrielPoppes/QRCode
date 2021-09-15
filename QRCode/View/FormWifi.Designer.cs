@@ -1,7 +1,7 @@
 ﻿
-namespace QRCodeApplicationApplication.View
+namespace QRCodeApplication.View
 {
-    partial class FormWhatsApp
+    partial class FormWifi
     {
         /// <summary>
         /// Required designer variable.
@@ -33,8 +33,6 @@ namespace QRCodeApplicationApplication.View
             this.txbTelefone = new System.Windows.Forms.MaskedTextBox();
             this.btnQRCodeApplicationApplication = new System.Windows.Forms.Button();
             this.picQRCodeApplicationApplication = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtbTexto = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picQRCodeApplicationApplication)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +41,7 @@ namespace QRCodeApplicationApplication.View
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(303, 338);
+            this.label1.Location = new System.Drawing.Point(261, 334);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 17);
             this.label1.TabIndex = 8;
@@ -52,7 +50,7 @@ namespace QRCodeApplicationApplication.View
             // txbTelefone
             // 
             this.txbTelefone.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTelefone.Location = new System.Drawing.Point(370, 335);
+            this.txbTelefone.Location = new System.Drawing.Point(328, 331);
             this.txbTelefone.Mask = "(99) 00000-0000";
             this.txbTelefone.Name = "txbTelefone";
             this.txbTelefone.Size = new System.Drawing.Size(211, 25);
@@ -61,56 +59,33 @@ namespace QRCodeApplicationApplication.View
             // btnQRCodeApplicationApplication
             // 
             this.btnQRCodeApplicationApplication.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQRCodeApplicationApplication.Location = new System.Drawing.Point(370, 405);
+            this.btnQRCodeApplicationApplication.Location = new System.Drawing.Point(328, 369);
             this.btnQRCodeApplicationApplication.Name = "btnQRCodeApplicationApplication";
             this.btnQRCodeApplicationApplication.Size = new System.Drawing.Size(211, 43);
             this.btnQRCodeApplicationApplication.TabIndex = 6;
             this.btnQRCodeApplicationApplication.Text = "GERAR QR CODE";
             this.btnQRCodeApplicationApplication.UseVisualStyleBackColor = true;
-            this.btnQRCodeApplicationApplication.Click += new System.EventHandler(this.btnQRCodeApplicationApplication_Click);
             // 
             // picQRCodeApplicationApplication
             // 
-            this.picQRCodeApplicationApplication.Location = new System.Drawing.Point(306, 43);
+            this.picQRCodeApplicationApplication.Location = new System.Drawing.Point(264, 39);
             this.picQRCodeApplicationApplication.Name = "picQRCodeApplicationApplication";
             this.picQRCodeApplicationApplication.Size = new System.Drawing.Size(275, 275);
             this.picQRCodeApplicationApplication.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picQRCodeApplicationApplication.TabIndex = 5;
             this.picQRCodeApplicationApplication.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(303, 373);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 17);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Texto";
-            // 
-            // txtbTexto
-            // 
-            this.txtbTexto.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbTexto.Location = new System.Drawing.Point(370, 370);
-            this.txtbTexto.Name = "txtbTexto";
-            this.txtbTexto.Size = new System.Drawing.Size(211, 25);
-            this.txtbTexto.TabIndex = 11;
-            // 
-            // FormWhatsApp
+            // FormWifi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(65)))), ((int)(((byte)(98)))));
             this.ClientSize = new System.Drawing.Size(889, 468);
-            this.Controls.Add(this.txtbTexto);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txbTelefone);
             this.Controls.Add(this.btnQRCodeApplicationApplication);
             this.Controls.Add(this.picQRCodeApplicationApplication);
-            this.Name = "FormWhatsApp";
-            this.Text = "FormWhatsApp";
+            this.Name = "FormWifi";
+            this.Text = "FormWifi";
             ((System.ComponentModel.ISupportInitialize)(this.picQRCodeApplicationApplication)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -123,7 +98,5 @@ namespace QRCodeApplicationApplication.View
         private System.Windows.Forms.MaskedTextBox txbTelefone;
         private System.Windows.Forms.Button btnQRCodeApplicationApplication;
         private System.Windows.Forms.PictureBox picQRCodeApplicationApplication;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtbTexto;
     }
 }
