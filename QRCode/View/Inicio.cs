@@ -21,9 +21,19 @@ namespace QRCodeApplicationApplicationApplication.View
             CustomizeDesign();
         }
 
-        private void CustomizeDesign() // Método para esconder os SUB Menus na inicialização do app
+        private Form activeForm = null;
+        private void openChildForm(Form childForm) // Método para abrir form dentro da Panel principal da tela Inicio
         {
-            panelQRCodeApplicationApplication.Visible = false;
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         #region EsconderSubMenu
@@ -31,6 +41,11 @@ namespace QRCodeApplicationApplicationApplication.View
         {
             if (panelQRCodeApplicationApplication.Visible == true)
                 panelQRCodeApplicationApplication.Visible = false;
+        }
+
+        private void CustomizeDesign() // Método para esconder os SUB Menus na inicialização do app
+        {
+            panelQRCodeApplicationApplication.Visible = false;
         }
         #endregion
 
@@ -49,35 +64,22 @@ namespace QRCodeApplicationApplicationApplication.View
         }
         #endregion
 
-        private Form activeForm = null;
-        private void openChildForm(Form childForm) // Método para abrir form dentro da Panel principal da tela Inicio
-        {
-            if (activeForm != null)
-                activeForm.Close();
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelChildForm.Controls.Add(childForm);
-            panelChildForm.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
+        #region Botão QR Code (MENU lateral)
         private void btnQRCodeApplicationApplication_Click(object sender, EventArgs e) // Evento clique no botão btnQRCodeApplicationApplication
         {
             ShowSubMenu(panelQRCodeApplicationApplication);
         }
+        #endregion
 
-        #region Botão SMS
+        #region Botão SMS (MENU lateral)
         private void btnSMS_Click(object sender, EventArgs e)
         {
             openChildForm(new FormSMS());
             HideSubMenu();
         }
-        #endregion
+        #endregion 
 
-        #region Botão WhatsApp
+        #region Botão WhatsApp (MENU lateral)
         private void btnWhatsApp_Click(object sender, EventArgs e)
         {
             openChildForm(new FormWhatsApp());
@@ -85,7 +87,7 @@ namespace QRCodeApplicationApplicationApplication.View
         }
         #endregion
 
-        #region Botão Wi fi
+        #region Botão Wi fi (MENU lateral)
         private void btnWiFi_Click(object sender, EventArgs e)
         {
             openChildForm(new FormWifi());
@@ -93,7 +95,7 @@ namespace QRCodeApplicationApplicationApplication.View
         }
         #endregion
 
-        #region Botão Telefone
+        #region Botão Telefone (MENU lateral)
         private void btnTelefone_Click(object sender, EventArgs e)
         {
             openChildForm(new FormTelefone());
@@ -101,7 +103,7 @@ namespace QRCodeApplicationApplicationApplication.View
         }
         #endregion
 
-        #region Botão Site
+        #region Botão Site (MENU lateral)
         private void btnSite_Click(object sender, EventArgs e)
         {
             openChildForm(new FormSite());
