@@ -65,6 +65,12 @@
     <Compile Include="View\FormSMS.Designer.cs">
       <DependentUpon>FormSMS.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormWhatsApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormWhatsApp.Designer.cs">
+      <DependentUpon>FormWhatsApp.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Inicio.cs">
       <SubType>Form</SubType>
     </Compile>

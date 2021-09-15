@@ -1,5 +1,5 @@
 ﻿
-namespace QRCodeApplication.View
+namespace QRCodeApplicationApplication.View
 {
     partial class Inicio
     {
@@ -30,25 +30,25 @@ namespace QRCodeApplication.View
         private void InitializeComponent()
         {
             this.panelMenuMain = new System.Windows.Forms.Panel();
-            this.panelQRCode = new System.Windows.Forms.Panel();
+            this.panelQRCodeApplication = new System.Windows.Forms.Panel();
             this.btnSite = new System.Windows.Forms.Button();
             this.btnTelefone = new System.Windows.Forms.Button();
             this.btnWiFi = new System.Windows.Forms.Button();
             this.btnWhatsApp = new System.Windows.Forms.Button();
             this.btnSMS = new System.Windows.Forms.Button();
-            this.btnQRCode = new System.Windows.Forms.Button();
+            this.btnQRCodeApplication = new System.Windows.Forms.Button();
             this.panelMenuTop = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.panelMenuMain.SuspendLayout();
-            this.panelQRCode.SuspendLayout();
+            this.panelQRCodeApplication.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenuMain
             // 
             this.panelMenuMain.AutoScroll = true;
             this.panelMenuMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
-            this.panelMenuMain.Controls.Add(this.panelQRCode);
-            this.panelMenuMain.Controls.Add(this.btnQRCode);
+            this.panelMenuMain.Controls.Add(this.panelQRCodeApplication);
+            this.panelMenuMain.Controls.Add(this.btnQRCodeApplication);
             this.panelMenuMain.Controls.Add(this.panelMenuTop);
             this.panelMenuMain.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenuMain.Location = new System.Drawing.Point(0, 0);
@@ -56,18 +56,18 @@ namespace QRCodeApplication.View
             this.panelMenuMain.Size = new System.Drawing.Size(200, 607);
             this.panelMenuMain.TabIndex = 0;
             // 
-            // panelQRCode
+            // panelQRCodeApplication
             // 
-            this.panelQRCode.Controls.Add(this.btnSite);
-            this.panelQRCode.Controls.Add(this.btnTelefone);
-            this.panelQRCode.Controls.Add(this.btnWiFi);
-            this.panelQRCode.Controls.Add(this.btnWhatsApp);
-            this.panelQRCode.Controls.Add(this.btnSMS);
-            this.panelQRCode.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelQRCode.Location = new System.Drawing.Point(0, 216);
-            this.panelQRCode.Name = "panelQRCode";
-            this.panelQRCode.Size = new System.Drawing.Size(200, 229);
-            this.panelQRCode.TabIndex = 2;
+            this.panelQRCodeApplication.Controls.Add(this.btnSite);
+            this.panelQRCodeApplication.Controls.Add(this.btnTelefone);
+            this.panelQRCodeApplication.Controls.Add(this.btnWiFi);
+            this.panelQRCodeApplication.Controls.Add(this.btnWhatsApp);
+            this.panelQRCodeApplication.Controls.Add(this.btnSMS);
+            this.panelQRCodeApplication.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelQRCodeApplication.Location = new System.Drawing.Point(0, 216);
+            this.panelQRCodeApplication.Name = "panelQRCodeApplication";
+            this.panelQRCodeApplication.Size = new System.Drawing.Size(200, 229);
+            this.panelQRCodeApplication.TabIndex = 2;
             // 
             // btnSite
             // 
@@ -129,9 +129,10 @@ namespace QRCodeApplication.View
             this.btnWhatsApp.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnWhatsApp.Size = new System.Drawing.Size(200, 45);
             this.btnWhatsApp.TabIndex = 1;
-            this.btnWhatsApp.Text = "Whats App";
+            this.btnWhatsApp.Text = "WhatsApp";
             this.btnWhatsApp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnWhatsApp.UseVisualStyleBackColor = true;
+            this.btnWhatsApp.Click += new System.EventHandler(this.btnWhatsApp_Click);
             // 
             // btnSMS
             // 
@@ -151,22 +152,22 @@ namespace QRCodeApplication.View
             this.btnSMS.UseVisualStyleBackColor = false;
             this.btnSMS.Click += new System.EventHandler(this.btnSMS_Click);
             // 
-            // btnQRCode
+            // btnQRCodeApplication
             // 
-            this.btnQRCode.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnQRCode.FlatAppearance.BorderSize = 0;
-            this.btnQRCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQRCode.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQRCode.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnQRCode.Location = new System.Drawing.Point(0, 171);
-            this.btnQRCode.Name = "btnQRCode";
-            this.btnQRCode.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnQRCode.Size = new System.Drawing.Size(200, 45);
-            this.btnQRCode.TabIndex = 1;
-            this.btnQRCode.Text = "QR Code";
-            this.btnQRCode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQRCode.UseVisualStyleBackColor = true;
-            this.btnQRCode.Click += new System.EventHandler(this.btnQRCode_Click);
+            this.btnQRCodeApplication.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQRCodeApplication.FlatAppearance.BorderSize = 0;
+            this.btnQRCodeApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQRCodeApplication.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQRCodeApplication.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnQRCodeApplication.Location = new System.Drawing.Point(0, 171);
+            this.btnQRCodeApplication.Name = "btnQRCodeApplication";
+            this.btnQRCodeApplication.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnQRCodeApplication.Size = new System.Drawing.Size(200, 45);
+            this.btnQRCodeApplication.TabIndex = 1;
+            this.btnQRCodeApplication.Text = "QR Code";
+            this.btnQRCodeApplication.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQRCodeApplication.UseVisualStyleBackColor = true;
+            this.btnQRCodeApplication.Click += new System.EventHandler(this.btnQRCodeApplication_Click);
             // 
             // panelMenuTop
             // 
@@ -198,7 +199,7 @@ namespace QRCodeApplication.View
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.panelMenuMain.ResumeLayout(false);
-            this.panelQRCode.ResumeLayout(false);
+            this.panelQRCodeApplication.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -206,13 +207,13 @@ namespace QRCodeApplication.View
         #endregion
 
         private System.Windows.Forms.Panel panelMenuMain;
-        private System.Windows.Forms.Panel panelQRCode;
+        private System.Windows.Forms.Panel panelQRCodeApplication;
         private System.Windows.Forms.Button btnSite;
         private System.Windows.Forms.Button btnTelefone;
         private System.Windows.Forms.Button btnWiFi;
         private System.Windows.Forms.Button btnWhatsApp;
         private System.Windows.Forms.Button btnSMS;
-        private System.Windows.Forms.Button btnQRCode;
+        private System.Windows.Forms.Button btnQRCodeApplication;
         private System.Windows.Forms.Panel panelMenuTop;
         private System.Windows.Forms.Panel panelChildForm;
     }
