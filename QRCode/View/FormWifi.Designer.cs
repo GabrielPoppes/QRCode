@@ -45,7 +45,7 @@ namespace QRCodeApplicationApplication.View
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(144, 125);
+            this.label1.Location = new System.Drawing.Point(318, 404);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 17);
             this.label1.TabIndex = 8;
@@ -53,18 +53,20 @@ namespace QRCodeApplicationApplication.View
             // 
             // btnQRCodeApplicationApplicationApplication
             // 
+            this.btnQRCodeApplicationApplicationApplication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(112)))), ((int)(((byte)(137)))));
+            this.btnQRCodeApplicationApplicationApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQRCodeApplicationApplicationApplication.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQRCodeApplicationApplicationApplication.Location = new System.Drawing.Point(244, 202);
+            this.btnQRCodeApplicationApplicationApplication.Location = new System.Drawing.Point(418, 466);
             this.btnQRCodeApplicationApplicationApplication.Name = "btnQRCodeApplicationApplicationApplication";
-            this.btnQRCodeApplicationApplicationApplication.Size = new System.Drawing.Size(211, 43);
+            this.btnQRCodeApplicationApplicationApplication.Size = new System.Drawing.Size(179, 43);
             this.btnQRCodeApplicationApplicationApplication.TabIndex = 6;
             this.btnQRCodeApplicationApplicationApplication.Text = "GERAR QR CODE";
-            this.btnQRCodeApplicationApplicationApplication.UseVisualStyleBackColor = true;
+            this.btnQRCodeApplicationApplicationApplication.UseVisualStyleBackColor = false;
             this.btnQRCodeApplicationApplicationApplication.Click += new System.EventHandler(this.btnQRCodeApplicationApplicationApplication_Click);
             // 
             // picQRCodeApplicationApplicationApplication
             // 
-            this.picQRCodeApplicationApplicationApplication.Location = new System.Drawing.Point(539, 77);
+            this.picQRCodeApplicationApplicationApplication.Location = new System.Drawing.Point(321, 106);
             this.picQRCodeApplicationApplicationApplication.Name = "picQRCodeApplicationApplicationApplication";
             this.picQRCodeApplicationApplicationApplication.Size = new System.Drawing.Size(275, 275);
             this.picQRCodeApplicationApplicationApplication.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -74,9 +76,9 @@ namespace QRCodeApplicationApplication.View
             // txtbNomeRede
             // 
             this.txtbNomeRede.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbNomeRede.Location = new System.Drawing.Point(244, 122);
+            this.txtbNomeRede.Location = new System.Drawing.Point(418, 401);
             this.txtbNomeRede.Name = "txtbNomeRede";
-            this.txtbNomeRede.Size = new System.Drawing.Size(211, 25);
+            this.txtbNomeRede.Size = new System.Drawing.Size(178, 25);
             this.txtbNomeRede.TabIndex = 9;
             // 
             // label2
@@ -84,7 +86,7 @@ namespace QRCodeApplicationApplication.View
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(144, 163);
+            this.label2.Location = new System.Drawing.Point(318, 440);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 17);
             this.label2.TabIndex = 10;
@@ -93,16 +95,16 @@ namespace QRCodeApplicationApplication.View
             // txtbSenhaRede
             // 
             this.txtbSenhaRede.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbSenhaRede.Location = new System.Drawing.Point(244, 161);
+            this.txtbSenhaRede.Location = new System.Drawing.Point(418, 435);
             this.txtbSenhaRede.Name = "txtbSenhaRede";
-            this.txtbSenhaRede.Size = new System.Drawing.Size(211, 25);
+            this.txtbSenhaRede.Size = new System.Drawing.Size(179, 25);
             this.txtbSenhaRede.TabIndex = 11;
             this.txtbSenhaRede.TextChanged += new System.EventHandler(this.txtbSenhaRede_TextChanged);
             // 
             // pictureFundoBranco
             // 
             this.pictureFundoBranco.Image = global::QRCode.Properties.Resources.fundobranco;
-            this.pictureFundoBranco.Location = new System.Drawing.Point(539, 77);
+            this.pictureFundoBranco.Location = new System.Drawing.Point(321, 106);
             this.pictureFundoBranco.Name = "pictureFundoBranco";
             this.pictureFundoBranco.Size = new System.Drawing.Size(275, 275);
             this.pictureFundoBranco.TabIndex = 12;
@@ -113,7 +115,7 @@ namespace QRCodeApplicationApplication.View
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(65)))), ((int)(((byte)(98)))));
-            this.ClientSize = new System.Drawing.Size(889, 468);
+            this.ClientSize = new System.Drawing.Size(889, 568);
             this.Controls.Add(this.pictureFundoBranco);
             this.Controls.Add(this.txtbSenhaRede);
             this.Controls.Add(this.label2);
