@@ -24,7 +24,7 @@ namespace QRCodeApplication
             Graphics graphics = e.Graphics;
             Rectangle gradient_rect = new Rectangle(0, 0, Width, Height);
 
-            Brush br = new LinearGradientBrush(gradient_rect, Color.FromArgb(0, 102, 102), Color.FromArgb(0, 51, 102), 45);
+            Brush br = new LinearGradientBrush(gradient_rect, Color.FromArgb(6, 13, 19), Color.FromArgb(0, 51, 102), 45);
 
             graphics.FillRectangle(br, gradient_rect);
         }

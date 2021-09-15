@@ -31,11 +31,11 @@ namespace QRCodeApplication
         {
             this.components = new System.ComponentModel.Container();
             this.panelCenter = new System.Windows.Forms.Panel();
-            this.panelProgressBarRight = new System.Windows.Forms.Panel();
-            this.panelProgressBarLeft = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelProgressBarLeft = new System.Windows.Forms.Panel();
+            this.panelProgressBarRight = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelCenter.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,28 +52,17 @@ namespace QRCodeApplication
             this.panelCenter.TabIndex = 0;
             this.panelCenter.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCenter_Paint);
             // 
-            // panelProgressBarRight
+            // label2
             // 
-            this.panelProgressBarRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
-            this.panelProgressBarRight.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelProgressBarRight.Location = new System.Drawing.Point(0, 422);
-            this.panelProgressBarRight.Name = "panelProgressBarRight";
-            this.panelProgressBarRight.Size = new System.Drawing.Size(800, 28);
-            this.panelProgressBarRight.TabIndex = 0;
-            // 
-            // panelProgressBarLeft
-            // 
-            this.panelProgressBarLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(109)))), ((int)(((byte)(137)))));
-            this.panelProgressBarLeft.Location = new System.Drawing.Point(0, 422);
-            this.panelProgressBarLeft.Name = "panelProgressBarLeft";
-            this.panelProgressBarLeft.Size = new System.Drawing.Size(38, 28);
-            this.panelProgressBarLeft.TabIndex = 1;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 15;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(294, 398);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(215, 21);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Copyright - Gabriel Poppes";
             // 
             // label1
             // 
@@ -87,17 +76,28 @@ namespace QRCodeApplication
             this.label1.TabIndex = 2;
             this.label1.Text = "LOADING";
             // 
-            // label2
+            // panelProgressBarLeft
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(294, 398);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(215, 21);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Copyright - Gabriel Poppes";
+            this.panelProgressBarLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(109)))), ((int)(((byte)(137)))));
+            this.panelProgressBarLeft.Location = new System.Drawing.Point(0, 422);
+            this.panelProgressBarLeft.Name = "panelProgressBarLeft";
+            this.panelProgressBarLeft.Size = new System.Drawing.Size(38, 28);
+            this.panelProgressBarLeft.TabIndex = 1;
+            // 
+            // panelProgressBarRight
+            // 
+            this.panelProgressBarRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.panelProgressBarRight.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelProgressBarRight.Location = new System.Drawing.Point(0, 422);
+            this.panelProgressBarRight.Name = "panelProgressBarRight";
+            this.panelProgressBarRight.Size = new System.Drawing.Size(800, 28);
+            this.panelProgressBarRight.TabIndex = 0;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 15;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Loading
             // 

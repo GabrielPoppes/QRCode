@@ -27,11 +27,10 @@ namespace QRCodeApplication.View
         private void GerarQRCode()
         {
             string telefone = txbTelefone.Text;
-            string mensagem = txbMensagem.Text;
 
-            if (telefone != "" && mensagem != "")
+            if (telefone != "")
             {
-                SMS generator = new SMS(telefone, mensagem);
+                SMS generator = new SMS(telefone);
                 string payload = generator.ToString();
                 QRCodeGenerator qrGenerator = new QRCodeGenerator();
                 QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
