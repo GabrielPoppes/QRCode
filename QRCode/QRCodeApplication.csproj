@@ -158,5 +158,14 @@
   <ItemGroup>
     <None Include="Resources\QRCODE_LOAD.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qr-code-abertura-1-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-11.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -73,6 +73,16 @@ namespace QRCode.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome__8_ {
+            get {
+                object obj = ResourceManager.GetObject("Design sem nome (8)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fundobranco {
             get {
                 object obj = ResourceManager.GetObject("fundobranco", resourceCulture);
@@ -86,6 +96,16 @@ namespace QRCode.Properties {
         internal static System.Drawing.Bitmap QR {
             get {
                 object obj = ResourceManager.GetObject("QR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap qr_code_abertura_1_ {
+            get {
+                object obj = ResourceManager.GetObject("qr-code-abertura-1-", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +136,16 @@ namespace QRCode.Properties {
         internal static System.Drawing.Bitmap QRCODE_LOADING {
             get {
                 object obj = ResourceManager.GetObject("QRCODE_LOADING", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Untitled_11 {
+            get {
+                object obj = ResourceManager.GetObject("Untitled-11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

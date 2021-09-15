@@ -39,10 +39,13 @@ namespace QRCodeApplicationApplicationApplication.View
             this.btnQRCodeApplicationApplication = new System.Windows.Forms.Button();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.panelMenuTop = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenuMain.SuspendLayout();
             this.panelQRCodeApplicationApplication.SuspendLayout();
+            this.panelChildForm.SuspendLayout();
             this.panelMenuTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -178,6 +181,7 @@ namespace QRCodeApplicationApplicationApplication.View
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(65)))), ((int)(((byte)(98)))));
+            this.panelChildForm.Controls.Add(this.pictureBox2);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(200, 0);
             this.panelChildForm.Name = "panelChildForm";
@@ -194,12 +198,22 @@ namespace QRCodeApplicationApplicationApplication.View
             this.panelMenuTop.Size = new System.Drawing.Size(200, 171);
             this.panelMenuTop.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::QRCode.Properties.Resources.Design_sem_nome__8_;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(905, 607);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::QRCode.Properties.Resources.QR;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 10);
+            this.pictureBox1.Image = global::QRCode.Properties.Resources.Untitled_11;
+            this.pictureBox1.Location = new System.Drawing.Point(54, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(173, 165);
+            this.pictureBox1.Size = new System.Drawing.Size(93, 113);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -217,7 +231,9 @@ namespace QRCodeApplicationApplicationApplication.View
             this.Text = "Inicio";
             this.panelMenuMain.ResumeLayout(false);
             this.panelQRCodeApplicationApplication.ResumeLayout(false);
+            this.panelChildForm.ResumeLayout(false);
             this.panelMenuTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -236,5 +252,6 @@ namespace QRCodeApplicationApplicationApplication.View
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Panel panelMenuTop;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

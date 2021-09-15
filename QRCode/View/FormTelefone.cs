@@ -33,7 +33,7 @@ namespace QRCodeApplication.View
         {
             string telefone = txbTelefone.Text;
 
-            if (telefone != "" || telefone != "(  )     -    ")
+            if (telefone != "")
             {
                 PhoneNumber generator = new PhoneNumber(telefone);
 
