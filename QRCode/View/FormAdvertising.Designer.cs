@@ -38,7 +38,7 @@ namespace QRCodeApplication.View
             this.pictureInicialPay.Image = global::QRCode.Properties.Resources.Design_sem_nome__8_;
             this.pictureInicialPay.Location = new System.Drawing.Point(0, 0);
             this.pictureInicialPay.Name = "pictureInicialPay";
-            this.pictureInicialPay.Size = new System.Drawing.Size(893, 471);
+            this.pictureInicialPay.Size = new System.Drawing.Size(905, 607);
             this.pictureInicialPay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureInicialPay.TabIndex = 1;
             this.pictureInicialPay.TabStop = false;
@@ -47,7 +47,7 @@ namespace QRCodeApplication.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(889, 468);
+            this.ClientSize = new System.Drawing.Size(889, 606);
             this.Controls.Add(this.pictureInicialPay);
             this.Name = "FormAdvertising";
             this.Text = "FormAdvertising";
