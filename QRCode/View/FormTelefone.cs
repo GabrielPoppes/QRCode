@@ -19,11 +19,14 @@ namespace QRCodeApplication.View
             InitializeComponent();
         }
 
+        #region Ação do botão Gerar QR Code
         private void btnQRCodeApplicationApplication_Click(object sender, EventArgs e)
         {
             GerarQRCodeApplicationApplication();
         }
+        #endregion
 
+        #region Método para gerar o QR Code
         private void GerarQRCodeApplicationApplication()
         {
             string telefone = txbTelefone.Text;
@@ -45,5 +48,6 @@ namespace QRCodeApplication.View
                 MessageBox.Show("Por favor, preencha todos os campos!");
             }
         }
+        #endregion
     }
 }

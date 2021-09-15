@@ -21,6 +21,7 @@ namespace QRCodeApplicationApplicationApplication.View
             CustomizeDesign();
         }
 
+        #region Método para abrir as telas dentro do Panel principal!
         private Form activeForm = null;
         private void openChildForm(Form childForm) // Método para abrir form dentro da Panel principal da tela Inicio
         {
@@ -35,6 +36,7 @@ namespace QRCodeApplicationApplicationApplication.View
             childForm.BringToFront();
             childForm.Show();
         }
+        #endregion
 
         #region EsconderSubMenu
         private void HideSubMenu() // Esconder Sub Menu

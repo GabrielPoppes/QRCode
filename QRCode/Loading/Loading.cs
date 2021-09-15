@@ -19,6 +19,7 @@ namespace QRCodeApplicationApplicationApplication
             InitializeComponent();
         }
 
+        #region Método para deixar o background degrade
         private void SetBackColorDegrade(object sender, PaintEventArgs e) // Método para deixar o plano de fundo do elemento em tom degrade
         {
             Graphics graphics = e.Graphics;
@@ -28,12 +29,16 @@ namespace QRCodeApplicationApplicationApplication
 
             graphics.FillRectangle(br, gradient_rect);
         }
+        #endregion
 
+        #region Panel principal: alterando a cor
         private void panelCenter_Paint(object sender, PaintEventArgs e) // Panel principal
         {
             SetBackColorDegrade(sender, e);
         }
+        #endregion
 
+        #region Codificação do tempo do loading no evento timer
         private void timer1_Tick(object sender, EventArgs e)
         {
             panelProgressBarLeft.Width += 3; // panelProgressBarLeft é a barra menor (left)
@@ -45,5 +50,6 @@ namespace QRCodeApplicationApplicationApplication
                 this.Hide();
             }
         }
+        #endregion
     }
 }

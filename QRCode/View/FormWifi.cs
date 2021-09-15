@@ -26,6 +26,14 @@ namespace QRCodeApplication.View
         }
         #endregion
 
+        #region Ação do botão Gerar QR Code
+        private void btnQRCodeApplicationApplication_Click(object sender, EventArgs e)
+        {
+            GerarQRCode();
+        }
+        #endregion
+
+        #region Método para gerar o QR Code
         private void GerarQRCode()
         {
             string nomeWifi = txtbNomeRede.Text;
@@ -50,10 +58,6 @@ namespace QRCodeApplication.View
                 MessageBox.Show("Por favor, preencha todos os campos!");
             }
         }
-
-        private void btnQRCodeApplicationApplication_Click(object sender, EventArgs e)
-        {
-            GerarQRCode();
-        }
+        #endregion
     }
 }
