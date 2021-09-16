@@ -21,6 +21,8 @@ namespace QRCodeApplicationApplication.View
         public FormSite()
         {
             InitializeComponent();
+            HideErrorNotification(); // Esconder notificação de erro
+
         }
 
         #region Ação do botão Gerar QR Code
@@ -45,13 +47,16 @@ namespace QRCodeApplicationApplication.View
                 QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
                 QRCoder.QRCode qrCode = new QRCoder.QRCode(qrCodeData);
                 picQRCodeApplicationApplicationApplication.Image = qrCode.GetGraphic(20);
-                MessageBox.Show("QR Code gerado com sucesso!");
+
+                btnImprimir.Enabled = true; // Habilitando o botão de imprimir
+                HideErrorNotification();
             }
 
             else
             {
+                btnImprimir.Enabled = false; // Desabilitando o botão de imprimir
                 pictureFundoBranco.Show();
-                MessageBox.Show("Por favor, preencha todos os campos!");
+                ShowErrorNotification();
             }
         }
         #endregion
@@ -78,6 +83,29 @@ namespace QRCodeApplicationApplication.View
             e.Graphics.DrawImage(bm, 0, 0);
             bm.Dispose();
         }
-        #endregion 
+        #endregion
+
+        #region Escondendo notificação de erro
+        private void HideErrorNotification()
+        {
+            lblErrorNotification.Hide();
+            panelErrorNotification.Hide();
+        }
+        #endregion
+
+        #region Exibindo notificação de erro
+        private void ShowErrorNotification()
+        {
+            lblErrorNotification.Show();
+            panelErrorNotification.Show();
+        }
+        #endregion
+
+        #region Botão Close para fechar a notificação de erro
+        private void pictureCloseError_Click_1(object sender, EventArgs e)
+        {
+            HideErrorNotification();
+        }
+        #endregion
     }
 }

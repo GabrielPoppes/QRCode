@@ -19,6 +19,7 @@ namespace QRCodeApplicationApplication.View
         public FormWifi()
         {
             InitializeComponent();
+            HideErrorNotification();
         }
 
         #region Evento para senha digitada sair com asterisco (*)
@@ -52,13 +53,16 @@ namespace QRCodeApplicationApplication.View
                 QRCoder.QRCode qrCode = new QRCoder.QRCode(qrCodeData);
 
                 picQRCodeApplicationApplicationApplication.Image = qrCode.GetGraphic(20);
-                MessageBox.Show("QR Code gerado com sucesso!");
+
+                btnImprimir.Enabled = true;
+                HideErrorNotification();
             }
 
             else
             {
+                btnImprimir.Enabled = false;
                 pictureFundoBranco.Show();
-                MessageBox.Show("Por favor, preencha todos os campos!"); 
+                ShowErrorNotification();
             }
         }
         #endregion
@@ -85,6 +89,29 @@ namespace QRCodeApplicationApplication.View
             e.Graphics.DrawImage(bm, 0, 0);
             bm.Dispose();
         }
-        #endregion 
+        #endregion
+
+        #region Escondendo notificação de erro
+        private void HideErrorNotification()
+        {
+            lblErrorNotification.Hide();
+            panelErrorNotification.Hide();
+        }
+        #endregion
+
+        #region Exibindo notificação de erro
+        private void ShowErrorNotification()
+        {
+            lblErrorNotification.Show();
+            panelErrorNotification.Show();
+        }
+        #endregion
+
+        #region Botão Close para fechar a notificação de erro
+        private void pictureCloseError_Click(object sender, EventArgs e)
+        {
+            HideErrorNotification();
+        }
+        #endregion
     }
 }
