@@ -12,6 +12,7 @@ using static QRCoder.PayloadGenerator;
 using QRCodeApplicationApplication;
 using System.Security.Policy;
 using QRCoder;
+using System.Drawing.Printing;
 
 namespace QRCodeApplicationApplication.View
 {
@@ -54,5 +55,25 @@ namespace QRCodeApplicationApplication.View
             }
         }
         #endregion
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            PrintDialog pd = new PrintDialog();
+            PrintDocument doc = new PrintDocument();
+            doc.PrintPage += myPrintPage;
+            pd.Document = doc;
+            if (pd.ShowDialog() == DialogResult.OK)
+            {
+                doc.Print();
+            }
+        }
+
+        private void myPrintPage(object sender, PrintPageEventArgs e)
+        {
+            Bitmap bm = new Bitmap(picQRCodeApplicationApplicationApplication.Width, picQRCodeApplicationApplicationApplication.Height);
+            picQRCodeApplicationApplicationApplication.DrawToBitmap(bm, new Rectangle(0, 0, picQRCodeApplicationApplicationApplication.Width, picQRCodeApplicationApplicationApplication.Height));
+            e.Graphics.DrawImage(bm, 0, 0);
+            bm.Dispose();
+        }
     }
 }
