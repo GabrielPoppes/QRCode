@@ -56,7 +56,8 @@ namespace QRCodeApplicationApplication.View
         }
         #endregion
 
-        private void btnImprimir_Click(object sender, EventArgs e)
+        #region Evento quando clica no botão Imprimir
+        private void btnImprimir_Click(object sender, EventArgs e) // Botão Imprimir
         {
             PrintDialog pd = new PrintDialog();
             PrintDocument doc = new PrintDocument();
@@ -67,13 +68,16 @@ namespace QRCodeApplicationApplication.View
                 doc.Print();
             }
         }
+        #endregion
 
-        private void myPrintPage(object sender, PrintPageEventArgs e)
+        #region Método para imprimir
+        private void myPrintPage(object sender, PrintPageEventArgs e) // Método imprimir
         {
             Bitmap bm = new Bitmap(picQRCodeApplicationApplicationApplication.Width, picQRCodeApplicationApplicationApplication.Height);
             picQRCodeApplicationApplicationApplication.DrawToBitmap(bm, new Rectangle(0, 0, picQRCodeApplicationApplicationApplication.Width, picQRCodeApplicationApplicationApplication.Height));
             e.Graphics.DrawImage(bm, 0, 0);
             bm.Dispose();
         }
+        #endregion 
     }
 }

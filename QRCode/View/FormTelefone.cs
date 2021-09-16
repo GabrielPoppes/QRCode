@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using static QRCoder.PayloadGenerator;
 using QRCodeApplicationApplication;
 using QRCoder;
+using System.Drawing.Printing;
 
 namespace QRCodeApplicationApplication.View
 {
@@ -44,7 +45,6 @@ namespace QRCodeApplicationApplication.View
                 QRCoder.QRCode qrCode = new QRCoder.QRCode(qrCodeData);
                 picQRCodeApplicationApplicationApplication.Image = qrCode.GetGraphic(20);
                 MessageBox.Show("QR Code gerado com sucesso!");
-                MessageBox.Show(telefone);
             }
 
             else
@@ -54,5 +54,29 @@ namespace QRCodeApplicationApplication.View
             }
         }
         #endregion
+
+        #region Evento quando clica no botão Imprimir
+        private void btnImprimir_Click(object sender, EventArgs e) // Botão Imprimir
+        {
+            PrintDialog pd = new PrintDialog();
+            PrintDocument doc = new PrintDocument();
+            doc.PrintPage += myPrintPage;
+            pd.Document = doc;
+            if (pd.ShowDialog() == DialogResult.OK)
+            {
+                doc.Print();
+            }
+        }
+        #endregion
+
+        #region Método para imprimir
+        private void myPrintPage(object sender, PrintPageEventArgs e) // Método imprimir
+        {
+            Bitmap bm = new Bitmap(picQRCodeApplicationApplicationApplication.Width, picQRCodeApplicationApplicationApplication.Height);
+            picQRCodeApplicationApplicationApplication.DrawToBitmap(bm, new Rectangle(0, 0, picQRCodeApplicationApplicationApplication.Width, picQRCodeApplicationApplicationApplication.Height));
+            e.Graphics.DrawImage(bm, 0, 0);
+            bm.Dispose();
+        }
+        #endregion 
     }
 }

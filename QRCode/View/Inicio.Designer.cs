@@ -36,18 +36,18 @@ namespace QRCodeApplicationApplicationApplicationApplication.View
             this.btnWifi = new System.Windows.Forms.Button();
             this.btnWhatsApp = new System.Windows.Forms.Button();
             this.btnSMS = new System.Windows.Forms.Button();
-            this.panelMenuTop = new System.Windows.Forms.Panel();
-            this.panelChildForm = new System.Windows.Forms.Panel();
-            this.pictureInicialPay = new System.Windows.Forms.PictureBox();
             this.btnQRCodeApplicationApplicationApplication = new System.Windows.Forms.Button();
             this.btnInicio = new System.Windows.Forms.Button();
+            this.panelMenuTop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelChildForm = new System.Windows.Forms.Panel();
+            this.pictureInicialPay = new System.Windows.Forms.PictureBox();
             this.panelMenuMain.SuspendLayout();
             this.panelQRCodeApplicationApplicationApplication.SuspendLayout();
             this.panelMenuTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureInicialPay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenuMain
@@ -163,6 +163,46 @@ namespace QRCodeApplicationApplicationApplicationApplication.View
             this.btnSMS.UseVisualStyleBackColor = false;
             this.btnSMS.Click += new System.EventHandler(this.btnSMS_Click_1);
             // 
+            // btnQRCodeApplicationApplicationApplication
+            // 
+            this.btnQRCodeApplicationApplicationApplication.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQRCodeApplicationApplicationApplication.FlatAppearance.BorderSize = 0;
+            this.btnQRCodeApplicationApplicationApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQRCodeApplicationApplicationApplication.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQRCodeApplicationApplicationApplication.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnQRCodeApplicationApplicationApplication.Image = global::QRCode.Properties.Resources.settings;
+            this.btnQRCodeApplicationApplicationApplication.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnQRCodeApplicationApplicationApplication.Location = new System.Drawing.Point(0, 216);
+            this.btnQRCodeApplicationApplicationApplication.Name = "btnQRCodeApplicationApplicationApplication";
+            this.btnQRCodeApplicationApplicationApplication.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnQRCodeApplicationApplicationApplication.Size = new System.Drawing.Size(200, 45);
+            this.btnQRCodeApplicationApplicationApplication.TabIndex = 2;
+            this.btnQRCodeApplicationApplicationApplication.Text = "QR Code";
+            this.btnQRCodeApplicationApplicationApplication.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQRCodeApplicationApplicationApplication.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnQRCodeApplicationApplicationApplication.UseVisualStyleBackColor = true;
+            this.btnQRCodeApplicationApplicationApplication.Click += new System.EventHandler(this.btnQRCodeApplicationApplicationApplication_Click_1);
+            // 
+            // btnInicio
+            // 
+            this.btnInicio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInicio.FlatAppearance.BorderSize = 0;
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnInicio.Image = global::QRCode.Properties.Resources.home;
+            this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInicio.Location = new System.Drawing.Point(0, 171);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnInicio.Size = new System.Drawing.Size(200, 45);
+            this.btnInicio.TabIndex = 1;
+            this.btnInicio.Text = "Inicio";
+            this.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnInicio.UseVisualStyleBackColor = true;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
+            // 
             // panelMenuTop
             // 
             this.panelMenuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(39)))));
@@ -172,6 +212,16 @@ namespace QRCodeApplicationApplicationApplicationApplication.View
             this.panelMenuTop.Name = "panelMenuTop";
             this.panelMenuTop.Size = new System.Drawing.Size(200, 171);
             this.panelMenuTop.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QRCode.Properties.Resources.Untitled_11;
+            this.pictureBox1.Location = new System.Drawing.Point(54, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(93, 113);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panelChildForm
             // 
@@ -193,56 +243,6 @@ namespace QRCodeApplicationApplicationApplicationApplication.View
             this.pictureInicialPay.TabIndex = 0;
             this.pictureInicialPay.TabStop = false;
             // 
-            // btnQRCodeApplicationApplicationApplication
-            // 
-            this.btnQRCodeApplicationApplicationApplication.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnQRCodeApplicationApplicationApplication.FlatAppearance.BorderSize = 0;
-            this.btnQRCodeApplicationApplicationApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQRCodeApplicationApplicationApplication.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQRCodeApplicationApplicationApplication.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnQRCodeApplicationApplicationApplication.Image = global::QRCode.Properties.Resources.settings;
-            this.btnQRCodeApplicationApplicationApplication.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnQRCodeApplicationApplicationApplication.Location = new System.Drawing.Point(0, 216);
-            this.btnQRCodeApplicationApplicationApplication.Name = "btnQRCodeApplicationApplicationApplication";
-            this.btnQRCodeApplicationApplicationApplication.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnQRCodeApplicationApplicationApplication.Size = new System.Drawing.Size(200, 45);
-            this.btnQRCodeApplicationApplicationApplication.TabIndex = 2;
-            this.btnQRCodeApplicationApplicationApplication.Text = "QR Code";
-            this.btnQRCodeApplicationApplicationApplication.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQRCodeApplicationApplicationApplication.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnQRCodeApplicationApplicationApplication.UseVisualStyleBackColor = true;
-            this.btnQRCodeApplicationApplicationApplication.Click += new System.EventHandler(this.btnQRCodeApplicationApplicationApplication_Click_1);
-            // 
-            // btnInicio
-            // 
-            this.btnInicio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInicio.FlatAppearance.BorderSize = 0;
-            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInicio.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnInicio.Image = global::QRCode.Properties.Resources.home;
-            this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInicio.Location = new System.Drawing.Point(0, 171);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnInicio.Size = new System.Drawing.Size(200, 45);
-            this.btnInicio.TabIndex = 1;
-            this.btnInicio.Text = "Inicio";
-            this.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnInicio.UseVisualStyleBackColor = true;
-            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QRCode.Properties.Resources.Untitled_11;
-            this.pictureBox1.Location = new System.Drawing.Point(54, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 113);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,9 +257,9 @@ namespace QRCodeApplicationApplicationApplicationApplication.View
             this.panelMenuMain.ResumeLayout(false);
             this.panelQRCodeApplicationApplicationApplication.ResumeLayout(false);
             this.panelMenuTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureInicialPay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

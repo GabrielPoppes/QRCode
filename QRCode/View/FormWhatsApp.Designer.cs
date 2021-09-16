@@ -36,6 +36,7 @@ namespace QRCodeApplicationApplicationApplication.View
             this.label2 = new System.Windows.Forms.Label();
             this.txtbTexto = new System.Windows.Forms.TextBox();
             this.pictureFundoBranco = new System.Windows.Forms.PictureBox();
+            this.btnImprimir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picQRCodeApplicationApplicationApplication)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFundoBranco)).BeginInit();
             this.SuspendLayout();
@@ -64,10 +65,10 @@ namespace QRCodeApplicationApplicationApplication.View
             // 
             this.btnQRCodeApplicationApplicationApplication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(112)))), ((int)(((byte)(137)))));
             this.btnQRCodeApplicationApplicationApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQRCodeApplicationApplicationApplication.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQRCodeApplicationApplicationApplication.Location = new System.Drawing.Point(385, 463);
+            this.btnQRCodeApplicationApplicationApplication.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQRCodeApplicationApplicationApplication.Location = new System.Drawing.Point(321, 467);
             this.btnQRCodeApplicationApplicationApplication.Name = "btnQRCodeApplicationApplicationApplication";
-            this.btnQRCodeApplicationApplicationApplication.Size = new System.Drawing.Size(211, 43);
+            this.btnQRCodeApplicationApplicationApplication.Size = new System.Drawing.Size(134, 28);
             this.btnQRCodeApplicationApplicationApplication.TabIndex = 6;
             this.btnQRCodeApplicationApplicationApplication.Text = "GERAR QR CODE";
             this.btnQRCodeApplicationApplicationApplication.UseVisualStyleBackColor = false;
@@ -110,12 +111,26 @@ namespace QRCodeApplicationApplicationApplication.View
             this.pictureFundoBranco.TabIndex = 12;
             this.pictureFundoBranco.TabStop = false;
             // 
+            // btnImprimir
+            // 
+            this.btnImprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(112)))), ((int)(((byte)(137)))));
+            this.btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImprimir.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.Location = new System.Drawing.Point(462, 467);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(134, 28);
+            this.btnImprimir.TabIndex = 17;
+            this.btnImprimir.Text = "IMPRIMIR";
+            this.btnImprimir.UseVisualStyleBackColor = false;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
             // FormWhatsApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(65)))), ((int)(((byte)(98)))));
             this.ClientSize = new System.Drawing.Size(889, 568);
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.pictureFundoBranco);
             this.Controls.Add(this.txtbTexto);
             this.Controls.Add(this.label2);
@@ -141,5 +156,6 @@ namespace QRCodeApplicationApplicationApplication.View
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtbTexto;
         private System.Windows.Forms.PictureBox pictureFundoBranco;
+        private System.Windows.Forms.Button btnImprimir;
     }
 }

@@ -44,9 +44,9 @@ namespace QRCodeApplicationApplication.View
             this.btnQRCodeApplicationApplicationApplication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(112)))), ((int)(((byte)(137)))));
             this.btnQRCodeApplicationApplicationApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQRCodeApplicationApplicationApplication.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQRCodeApplicationApplicationApplication.Location = new System.Drawing.Point(385, 436);
+            this.btnQRCodeApplicationApplicationApplication.Location = new System.Drawing.Point(321, 436);
             this.btnQRCodeApplicationApplicationApplication.Name = "btnQRCodeApplicationApplicationApplication";
-            this.btnQRCodeApplicationApplicationApplication.Size = new System.Drawing.Size(211, 43);
+            this.btnQRCodeApplicationApplicationApplication.Size = new System.Drawing.Size(134, 28);
             this.btnQRCodeApplicationApplicationApplication.TabIndex = 10;
             this.btnQRCodeApplicationApplicationApplication.Text = "GERAR QR CODE";
             this.btnQRCodeApplicationApplicationApplication.UseVisualStyleBackColor = false;
@@ -55,9 +55,9 @@ namespace QRCodeApplicationApplication.View
             // txbSite
             // 
             this.txbSite.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSite.Location = new System.Drawing.Point(385, 401);
+            this.txbSite.Location = new System.Drawing.Point(353, 401);
             this.txbSite.Name = "txbSite";
-            this.txbSite.Size = new System.Drawing.Size(211, 25);
+            this.txbSite.Size = new System.Drawing.Size(243, 25);
             this.txbSite.TabIndex = 13;
             // 
             // pictureFundoBranco
@@ -94,9 +94,9 @@ namespace QRCodeApplicationApplication.View
             this.btnImprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(112)))), ((int)(((byte)(137)))));
             this.btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImprimir.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimir.Location = new System.Drawing.Point(385, 485);
+            this.btnImprimir.Location = new System.Drawing.Point(462, 436);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(211, 43);
+            this.btnImprimir.Size = new System.Drawing.Size(134, 28);
             this.btnImprimir.TabIndex = 15;
             this.btnImprimir.Text = "IMPRIMIR";
             this.btnImprimir.UseVisualStyleBackColor = false;
