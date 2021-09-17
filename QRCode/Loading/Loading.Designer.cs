@@ -31,12 +31,12 @@ namespace QRCodeApplicationApplicationApplicationApplication
         {
             this.components = new System.ComponentModel.Container();
             this.panelCenter = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelProgressBarLeft = new System.Windows.Forms.Panel();
             this.panelProgressBarRight = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelCenter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +54,16 @@ namespace QRCodeApplicationApplicationApplicationApplication
             this.panelCenter.Size = new System.Drawing.Size(800, 450);
             this.panelCenter.TabIndex = 0;
             this.panelCenter.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCenter_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::QRCode.Properties.Resources.QRCode_LOAD;
+            this.pictureBox1.Location = new System.Drawing.Point(108, 136);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(600, 156);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -102,16 +112,6 @@ namespace QRCodeApplicationApplicationApplicationApplication
             this.timer1.Interval = 15;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::QRCode.Properties.Resources.QRCode_LOAD;
-            this.pictureBox1.Location = new System.Drawing.Point(108, 136);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(600, 156);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // Loading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,7 +120,7 @@ namespace QRCodeApplicationApplicationApplicationApplication
             this.Controls.Add(this.panelCenter);
             this.Name = "Loading";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Loading";
             this.panelCenter.ResumeLayout(false);
             this.panelCenter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
